@@ -8,7 +8,7 @@ class Destino:
         self.popularidad = 0.0
         self.disponibilidad = False
         self.id_ubicacion = 0
-        self.imagen = ''
+        self.imagen = ' '
     
     def cambiar_nombre(self, nombre):
         self.nombre = str(nombre)
