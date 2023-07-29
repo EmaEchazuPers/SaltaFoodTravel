@@ -1,6 +1,8 @@
 class Ruta_Visita:
-    def __init__(self,id_visita,nombre):
-        self.id_visita = int(id_visita)
+    id_visita = 0
+    def __init__(self,nombre):
+        Ruta_Visita.id_visita += 1
+        self.id_visita = Ruta_Visita.id_visita
         self.nombre = str(nombre)
         self.destinos=[]
     

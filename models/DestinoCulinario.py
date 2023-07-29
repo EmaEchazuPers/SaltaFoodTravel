@@ -1,23 +1,29 @@
 class Destino:
-    def __init__(self, id_destino,nombre):
-        self.id_destino = id_destino
+    id_destino = 0
+    def __init__(self, nombre):
+        Destino.id_destino += 1
+        self.id_destino = Destino.id_destino
         self.nombre = nombre
+        self.tipo_cocina = ''
         self.ingredientes = []        
         self.precio_min = 0.0
         self.precio_max = 0.0
         self.popularidad = 0.0
         self.disponibilidad = False
         self.id_ubicacion = 0
-        self.imagen = ' '
+        self.imagen = ''
     
     def cambiar_nombre(self, nombre):
         self.nombre = str(nombre)
+    
+    def cambiar_cocina(self, tipo_cocina):
+        self.tipo_cocina = str(tipo_cocina)
 
     def agregar_ingrediente(self, ingrediente):
         self.ingredientes.append(str(ingrediente))
     
     def modificar_ingrediente(self, ingrediente, nuevoingrediente):
-        if ingrediente in ingredientes:
+        if ingrediente in self.ingredientes:
             self.ingredientes[ingrediente] = nuevoingrediente
     
     def eliminar_ingrediente(self, ingrediente):

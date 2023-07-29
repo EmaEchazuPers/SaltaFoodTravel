@@ -1,6 +1,8 @@
 class Usuario:
-    def __init__(self,id_usuario,nombre,apellido):
-        self.id_usuario = id_usuario
+    id_usuario = 0
+    def __init__(self,nombre,apellido):
+        Usuario.id_usuario += 1
+        self.id_usuario = Usuario.id_usuario
         self.nombre = str(nombre)
         self.apellido = str(apellido)
         self.historial_rutas = []

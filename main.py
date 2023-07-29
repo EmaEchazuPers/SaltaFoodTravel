@@ -1,5 +1,2 @@
-a = 3
-b=2
-c=a+b
+import cargaDatos
 
-print(f'Suma de {a} y {b} es {c}')

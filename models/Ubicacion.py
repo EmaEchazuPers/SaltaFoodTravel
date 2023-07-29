@@ -1,6 +1,8 @@
 class Ubicacion:
-    def __init__(self,id_ubicacion,direccion):
-        self.id_ubicacion = int(id_ubicacion)
+    id_ubicacion = 0
+    def __init__(self, direccion):
+        Ubicacion.id_ubicacion += 1
+        self.id_ubicacion = Ubicacion.id_ubicacion
         self.direccion = str(direccion)
         self.coordenadas=[]
     
