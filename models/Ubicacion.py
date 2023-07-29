@@ -12,5 +12,5 @@ class Ubicacion:
     def agregar_coordenada(self, id_coordenada):
         self.coordenadas.append(int(id_coordenada))
     
-    def eliminarr_coordenada(self, id_coordenada):
+    def eliminar_coordenada(self, id_coordenada):
         self.coordenadas.remove(id_coordenada)
