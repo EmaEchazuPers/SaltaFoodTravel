@@ -1,0 +1,15 @@
+{
+    "ubi_mercado" : 
+    {
+        "id_ubicacion" : 1201,
+        "direccion" : "Av. San Martin 678",
+        "coordenadas" : [-24.79317,-65.41386]
+    },
+    "ubi_mamma_mia" : 
+    {
+        "id_ubicacion" : 1202,
+        "direccion" : "Pje. Zorrilla 1",
+        "coordenadas" : [-24.78831,-65.40236]
+    }
+
+}

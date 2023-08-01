@@ -1,0 +1,28 @@
+{
+    "mercado_san_miguel" : 
+        {
+            "id_destino" : 1001,
+            "nombre" : "Mercado San Miguel",
+            "tipo_cocina" : "Regional",
+            "ingredientes" : ["tomate","choclo","aji","condimentos","carne"],
+            "precio_min" : 3000.00,
+            "precio_max" : 12000.00,
+            "popularidad" : 4.4,
+            "disponibilidad" : true,
+            "id_ubicacion" : 1201,
+            "imagen" : "https://municipalidadsalta.gob.ar/wp-content/uploads/2018/02/mercado-municipal-ok.jpg"
+        },
+    "mamma_mia" : 
+        {
+            "id_destino" : 1002,
+            "nombre" : "Trattoria Mamma Mia",
+            "tipo_cocina" : "Italiana",
+            "ingredientes" : ["salsa","pasta","carne","ricotta"],
+            "precio_min" : 5000.00,
+            "precio_max" : 23000.00,
+            "popularidad" : 4.1,
+            "disponibilidad" : true,
+            "id_ubicacion" : 1202,
+            "imagen" : "https://media-cdn.tripadvisor.com/media/photo-s/0d/c4/51/74/fachada.jpg"
+        }
+}
