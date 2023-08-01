@@ -5,11 +5,16 @@
         "direccion" : "Av. San Martin 678",
         "coordenadas" : [-24.79317,-65.41386]
     },
-    "ubi_mamma_mia" : 
+    "ubi_new_time" : 
     {
         "id_ubicacion" : 1202,
+        "direccion" : "Caseros 602",
+        "coordenadas" : [-24.78960,-65.41099]
+    },
+    "ubi_mamma_mia" : 
+    {
+        "id_ubicacion" : 1203,
         "direccion" : "Pje. Zorrilla 1",
         "coordenadas" : [-24.78831,-65.40236]
     }
-
 }

@@ -1,0 +1,15 @@
+{
+    "ruta_visita_01":
+    {
+        "id_visita" : 1301,
+        "nombre" : "Ruta amigos",
+        "destinos": [1001,1002,1003]
+    },
+    "ruta_visita_02":
+    {
+        "id_visita" : 1302,
+        "nombre" : "Ruta corta",
+        "destinos": [1001,1002]
+    }
+}
+
