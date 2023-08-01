@@ -1,8 +1,6 @@
 class Review:
-    id_review = 0
-    def __init__(self, id_destino, id_usuario):
-        Review.id_review += 1
-        self.id_review = Review.id_review
+    def __init__(self, id_review, id_destino, id_usuario):
+        self.id_review = id_review
         self.id_destino = int(id_destino)
         self.id_usuario = int(id_usuario)
         self.calificacion = 0

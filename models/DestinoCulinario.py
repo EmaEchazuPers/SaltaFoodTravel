@@ -1,8 +1,6 @@
 class Destino:
-    id_destino = 0
-    def __init__(self, nombre):
-        Destino.id_destino += 1
-        self.id_destino = Destino.id_destino
+    def __init__(self, id_destino, nombre):        
+        self.id_destino = id_destino
         self.nombre = nombre
         self.tipo_cocina = ''
         self.ingredientes = []        
@@ -24,7 +22,7 @@ class Destino:
     
     def agregar_ingrediente(self, ingrediente):
         self.ingredientes.append(str(ingrediente))
-        
+
     def modificar_ingrediente(self, ingrediente, nuevoingrediente):
         if ingrediente in self.ingredientes:
             self.ingredientes[ingrediente] = nuevoingrediente
