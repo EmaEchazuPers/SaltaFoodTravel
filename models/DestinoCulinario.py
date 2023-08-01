@@ -19,9 +19,12 @@ class Destino:
     def cambiar_cocina(self, tipo_cocina):
         self.tipo_cocina = str(tipo_cocina)
 
+    def cambiar_ingredientes(self, ingredientes):
+        self.ingredientes = ingredientes
+    
     def agregar_ingrediente(self, ingrediente):
         self.ingredientes.append(str(ingrediente))
-    
+        
     def modificar_ingrediente(self, ingrediente, nuevoingrediente):
         if ingrediente in self.ingredientes:
             self.ingredientes[ingrediente] = nuevoingrediente
@@ -36,11 +39,11 @@ class Destino:
     def cambiar_popularidad(self, popularidad):
         self.popularidad = float(popularidad)
     
-    def cambiar_disponibilidad(self):
-        if self.disponibilidad:
-            self.disponibilidad = False
-        else:
+    def cambiar_disponibilidad(self,disponibilidad):
+        if disponibilidad:
             self.disponibilidad = True
+        else:
+            self.disponibilidad = False
 
     def cambiar_ubicacion(self, id_ubicacion):
             self.id_ubicacion = int(id_ubicacion)
