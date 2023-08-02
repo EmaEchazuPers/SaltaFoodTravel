@@ -3,12 +3,6 @@ class Ruta_Visita:
         self.id_visita = id_visita
         self.nombre = str(nombre)
         self.destinos=[]
-    
-    def cambiar_nombre(self,nombre):
-        self.nombre = str(nombre)
-    
-    def agregar_visita(self, id_destino):
-        self.destinos.append(int(id_destino))
-    
-    def eliminar_ruta(self, id_destino):
-        self.destinos.remove(id_destino)
+       
+    def set_destinos(self, destinos):
+        self.destinos = destinos

@@ -5,8 +5,8 @@ class Actividad:
         self.id_destino = int(id_destino)
         self.hora_inicio = ''
     
-    def cambiar_nombre(self,nombre):
+    def set_nombre(self,nombre):
         self.nombre = str(nombre)
     
-    def cambiar_hora(self, hora_inicio):
+    def set_hora(self, hora_inicio):
         self.hora_inicio = str(hora_inicio)

@@ -4,15 +4,8 @@ class Ubicacion:
         self.direccion = str(direccion)
         self.coordenadas=[]
     
-    def cambiar_direccion(self,direccion):
+    def set_direccion(self,direccion):
         self.direccion = str(direccion)
     
-    def agregar_coordenadas(self,coordenadas):
+    def set_coordenadas(self,coordenadas):
         self.coordenadas = coordenadas
-
-    def modificar_coordenada(self, coordenada, nuevacoordenada):
-        if coordenada in self.coordenadas:
-            self.coordenadas[coordenada] = nuevacoordenada
-    
-    def eliminar_coordenada(self, coordenada):
-        self.coordenadas.remove(coordenada)

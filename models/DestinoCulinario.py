@@ -11,40 +11,30 @@ class Destino:
         self.id_ubicacion = 0
         self.imagen = ''
     
-    def cambiar_nombre(self, nombre):
+    def set_nombre(self, nombre):
         self.nombre = str(nombre)
     
-    def cambiar_cocina(self, tipo_cocina):
+    def set_cocina(self, tipo_cocina):
         self.tipo_cocina = str(tipo_cocina)
 
-    def cambiar_ingredientes(self, ingredientes):
+    def set_ingredientes(self, ingredientes):
         self.ingredientes = ingredientes
     
-    def agregar_ingrediente(self, ingrediente):
-        self.ingredientes.append(str(ingrediente))
-
-    def modificar_ingrediente(self, ingrediente, nuevoingrediente):
-        if ingrediente in self.ingredientes:
-            self.ingredientes[ingrediente] = nuevoingrediente
-    
-    def eliminar_ingrediente(self, ingrediente):
-        self.ingredientes.remove(ingrediente)
-    
-    def cambiar_precios(self, minimo, maximo):
+    def set_precios(self, minimo, maximo):
         self.precio_min = float(minimo)
         self.precio_max = float(maximo)
     
-    def cambiar_popularidad(self, popularidad):
+    def set_popularidad(self, popularidad):
         self.popularidad = float(popularidad)
     
-    def cambiar_disponibilidad(self,disponibilidad):
+    def set_disponibilidad(self,disponibilidad):
         if disponibilidad:
             self.disponibilidad = True
         else:
             self.disponibilidad = False
 
-    def cambiar_ubicacion(self, id_ubicacion):
+    def set_ubicacion(self, id_ubicacion):
             self.id_ubicacion = int(id_ubicacion)
     
-    def cambiar_imagen(self, imagen):
+    def set_imagen(self, imagen):
         self.imagen = str(imagen)

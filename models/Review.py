@@ -7,14 +7,14 @@ class Review:
         self.comentario = ''
         self.animo = ''
     
-    def cambiar_calificacion(self,calificacion):
+    def set_calificacion(self,calificacion):
         if calificacion >= 1 & calificacion <= 5:
             self.calificacion = int(calificacion)
         else:
             print('Calificacion no valida')
 
-    def cambiar_comentario(self, comentario):
+    def set_comentario(self, comentario):
         self.comentario = str(comentario)
 
-    def cambiar_animo(self, animo):
+    def set_animo(self, animo):
         self.animo = str(animo)
