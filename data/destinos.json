@@ -1,43 +1,40 @@
-{
-    "mercado_san_miguel" : 
-        {
-            "id_destino" : 1001,
-            "nombre" : "Mercado San Miguel",
-            "tipo_cocina" : "Regional",
-            "ingredientes" : ["tomate","choclo","aji","condimentos","carne","huevo"],
-            "precio_min" : 3000.00,
-            "precio_max" : 12000.00,
-            "popularidad" : 4.4,
-            "disponibilidad" : true,
-            "id_ubicacion" : 1201,
-            "imagen" : "https://municipalidadsalta.gob.ar/wp-content/uploads/2018/02/mercado-municipal-ok.jpg"
-        },
+[
+    {
+        "id_destino" : 1001,
+        "nombre" : "Mercado San Miguel",
+        "tipo_cocina" : "Regional",
+        "ingredientes" : ["tomate","choclo","aji","condimentos","carne","huevo"],
+        "precio_min" : 3000.00,
+        "precio_max" : 12000.00,
+        "popularidad" : 4.4,
+        "disponibilidad" : true,
+        "id_ubicacion" : 1201,
+        "imagen" : "https://municipalidadsalta.gob.ar/wp-content/uploads/2018/02/mercado-municipal-ok.jpg"
+    },
 
-    "new_time" : 
-        {
-            "id_destino" : 1002,
-            "nombre" : "Confiteria New Time",
-            "tipo_cocina" : "Comida Rapida",
-            "ingredientes" : ["tomate","cafe","queso","jamon","carne","huevo","pan","papa"],
-            "precio_min" : 4200.00,
-            "precio_max" : 16600.00,
-            "popularidad" : 3.5,
-            "disponibilidad" : true,
-            "id_ubicacion" : 1202,
-            "imagen" : "https://mapio.net/images-p/256278.jpg"
-        },
+    {
+        "id_destino" : 1002,
+        "nombre" : "Confiteria New Time",
+        "tipo_cocina" : "Comida Rapida",
+        "ingredientes" : ["tomate","cafe","queso","jamon","carne","huevo","pan","papa"],
+        "precio_min" : 4200.00,
+        "precio_max" : 16600.00,
+        "popularidad" : 3.5,
+        "disponibilidad" : true,
+        "id_ubicacion" : 1202,
+        "imagen" : "https://mapio.net/images-p/256278.jpg"
+    },
 
-    "mamma_mia" : 
-        {
-            "id_destino" : 1003,
-            "nombre" : "Trattoria Mamma Mia",
-            "tipo_cocina" : "Italiana",
-            "ingredientes" : ["salsa","pasta","carne","queso"],
-            "precio_min" : 5300.00,
-            "precio_max" : 23000.00,
-            "popularidad" : 4.1,
-            "disponibilidad" : true,
-            "id_ubicacion" : 1203,
-            "imagen" : "https://media-cdn.tripadvisor.com/media/photo-s/0d/c4/51/74/fachada.jpg"
-        }
-}
+    {
+        "id_destino" : 1003,
+        "nombre" : "Trattoria Mamma Mia",
+        "tipo_cocina" : "Italiana",
+        "ingredientes" : ["salsa","pasta","carne","queso"],
+        "precio_min" : 5300.00,
+        "precio_max" : 23000.00,
+        "popularidad" : 4.1,
+        "disponibilidad" : true,
+        "id_ubicacion" : 1203,
+        "imagen" : "https://media-cdn.tripadvisor.com/media/photo-s/0d/c4/51/74/fachada.jpg"
+    }
+]
