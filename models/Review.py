@@ -1,3 +1,5 @@
+import json
+
 class Review:
     def __init__(self, id_review, id_destino, id_usuario):
         self.id_review = id_review
@@ -7,6 +9,13 @@ class Review:
         self.comentario = ''
         self.animo = ''
     
+    @classmethod
+    def carga_json(cls,archivo):
+        with open(archivo,'r') as f:
+            data = json.load(f)
+        return [cls(**review) for review in data]
+
+    """
     def set_calificacion(self,calificacion):
         if calificacion >= 1 & calificacion <= 5:
             self.calificacion = int(calificacion)
@@ -18,3 +27,4 @@ class Review:
 
     def set_animo(self, animo):
         self.animo = str(animo)
+    """

@@ -1,3 +1,5 @@
+import json
+
 class Destino:
     def __init__(self, id_destino, nombre):        
         self.id_destino = id_destino
@@ -10,7 +12,13 @@ class Destino:
         self.disponibilidad = False
         self.id_ubicacion = 0
         self.imagen = ''
-    
+
+    @classmethod
+    def carga_json(cls,archivo):
+        with open(archivo,'r') as f:
+            data = json.load(f)
+        return [cls(**destino) for destino in data]
+    """
     def set_nombre(self, nombre):
         self.nombre = str(nombre)
     
@@ -38,3 +46,4 @@ class Destino:
     
     def set_imagen(self, imagen):
         self.imagen = str(imagen)
+"""
