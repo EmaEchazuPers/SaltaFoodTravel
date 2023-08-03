@@ -28,32 +28,24 @@ class VentanaActividades(tk.Frame):
 
         #Define lista de lugares    
 
-        self.lista_lugares = tk.Listbox(self)
-        self.lista_lugares.config(width=30, justify='center')
-        self.lista_lugares.grid(row=1, column=2, columnspan=2, rowspan=3,padx=5)
-        
-        #Define lista de actividades
-
         self.lista_actividades = tk.Listbox(self)
-        self.lista_actividades.config(width=30, justify='center')
-        #self.lista_actividades.bind('<<ListboxSelect>>',seleccionar)
-        self.lista_actividades.grid(row=1, column=5, columnspan=2, rowspan=3,padx=5)
-
+        self.lista_actividades.config(width=60, justify='center')
+        self.lista_actividades.grid(row=1, column=2, columnspan=2, rowspan=3,padx=5)
+        
         self.actualizar_lista()
-        self.actualizar_actividades()
+        
         #self.destino_elegido = self.actualizar_actividades(self.item_seleccionado)
 
+
     def actualizar_lista(self):
-        destinos = self.controlador.getDestinos()
-        self.lista_lugares.delete(0, tk.END)
-        for destino in destinos:
-            self.lista_lugares.insert(tk.END, destino.nombre)
-    
-    def actualizar_actividades(self):
         actividades = self.controlador_Act.getActividades()
+        destinos = self.controlador.getDestinos()
         self.lista_actividades.delete(0, tk.END)
-        for actividad in actividades:
-            self.lista_actividades.insert(tk.END, actividad.nombre)
+        for destino in destinos:
+            for actividad in actividades:
+                if destino.id_destino == actividad.id_destino:
+                    self.lista_actividades.insert(tk.END, destino.nombre + ': ' + actividad.nombre + ' - ' + actividad.hora_inicio + 'hs')
+    
     """
     def item_seleccionado():
         for item in self.lista_lugares.curselection():
