@@ -9,7 +9,7 @@ class VentanaActividades(tk.Frame):
         self.master = master
         self.controlador = controlador
         self.controlador_Act = controlador_Act
-        self.item_seleccionado = item_seleccionado
+        self.item_seleccionado = 0
         self.destino_elegido = 0
 
         #Define el titulo
@@ -30,7 +30,7 @@ class VentanaActividades(tk.Frame):
 
         self.lista_actividades = tk.Listbox(self)
         self.lista_actividades.config(width=30, justify='center')
-        self.lista_actividades.bind('<<ListboxSelect>>',seleccionar)
+        #self.lista_actividades.bind('<<ListboxSelect>>',seleccionar)
         self.lista_actividades.grid(row=1, column=1, columnspan=2, rowspan=3,padx=5)
 
         #Botones
