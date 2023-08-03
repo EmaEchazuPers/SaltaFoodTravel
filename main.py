@@ -9,7 +9,8 @@ class Aplicacion(tk.Tk):
         tk.Tk.__init__(self)
         self.title('SALTA FOOD TRAVEL')
         self.geometry('700x500')
-        self.resizable(False,False)
+        #self.resizable(False,False)
+        self.resizable(True,True)
         self.iniciar()
         self.cambiar_frame(self.ventana_inicio)
     
