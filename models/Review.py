@@ -1,13 +1,13 @@
 import json
 
 class Review:
-    def __init__(self, id_review, id_destino, id_usuario):
+    def __init__(self, id_review, id_destino, id_usuario,calificacion, comentario, animo):
         self.id_review = id_review
-        self.id_destino = int(id_destino)
-        self.id_usuario = int(id_usuario)
-        self.calificacion = 0
-        self.comentario = ''
-        self.animo = ''
+        self.id_destino = id_destino
+        self.id_usuario = id_usuario
+        self.calificacion = calificacion
+        self.comentario = comentario
+        self.animo = animo
     
     @classmethod
     def carga_json(cls,archivo):
