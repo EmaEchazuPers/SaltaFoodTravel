@@ -9,7 +9,7 @@
         "popularidad" : 4.4,
         "disponibilidad" : true,
         "id_ubicacion" : 1201,
-        "imagen" : "https://municipalidadsalta.gob.ar/wp-content/uploads/2018/02/mercado-municipal-ok.jpg"
+        "imagen" : "mercado.jpg"
     },
 
     {
@@ -22,7 +22,7 @@
         "popularidad" : 3.5,
         "disponibilidad" : true,
         "id_ubicacion" : 1202,
-        "imagen" : "https://mapio.net/images-p/256278.jpg"
+        "imagen" : "new_time.jpg"
     },
 
     {
@@ -35,6 +35,6 @@
         "popularidad" : 4.1,
         "disponibilidad" : true,
         "id_ubicacion" : 1203,
-        "imagen" : "https://media-cdn.tripadvisor.com/media/photo-s/0d/c4/51/74/fachada.jpg"
+        "imagen" : "mamma_mia.jpg"
     }
 ]
