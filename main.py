@@ -33,8 +33,11 @@ class Aplicacion(tk.Tk):
         controlador_actividades = Cont_Actividades.ControladorActividades(self,actividades)
 
         self.ventana_inicio = VentanaInicio.VentanaInicio(self,controlador_inicio)
+        self.ventana_inicio.configure(background='#EEEEEE')
         self.ventana_destinos = VentanaDestinos.VentanaDestinos(self,controlador_destino,controlador_ubicaciones)
+        self.ventana_destinos.configure(background='#EEEEEE')
         self.ventana_actividades = VentanaActividades.VentanaActividades(self,controlador_destino,controlador_actividades)
+        self.ventana_actividades.configure(background='#EEEEEE')
 
         self.ajustar_frame(self.ventana_inicio)
         self.ajustar_frame(self.ventana_destinos)
