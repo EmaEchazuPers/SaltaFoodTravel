@@ -1,11 +1,11 @@
 import json
 
 class Actividad:
-    def __init__(self, id_actividad, nombre, id_destino):
+    def __init__(self, id_actividad, nombre, id_destino, hora_inicio):
         self.id_actividad = id_actividad
-        self.nombre = str(nombre)
-        self.id_destino = int(id_destino)
-        self.hora_inicio = ''
+        self.nombre = nombre
+        self.id_destino = id_destino
+        self.hora_inicio = hora_inicio
     
     @classmethod
     def carga_json(cls,archivo):
