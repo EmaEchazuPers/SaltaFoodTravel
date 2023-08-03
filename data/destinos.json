@@ -8,7 +8,7 @@
         "precio_max" : 12000.00,
         "popularidad" : 4.4,
         "disponibilidad" : true,
-        "id_ubicacion" : 1201,
+        "id_ubicacion" : 1,
         "imagen" : "mercado.jpg"
     },
 
@@ -21,7 +21,7 @@
         "precio_max" : 16600.00,
         "popularidad" : 3.5,
         "disponibilidad" : true,
-        "id_ubicacion" : 1202,
+        "id_ubicacion" : 2,
         "imagen" : "new_time.jpg"
     },
 
@@ -34,7 +34,7 @@
         "precio_max" : 23000.00,
         "popularidad" : 4.1,
         "disponibilidad" : true,
-        "id_ubicacion" : 1203,
+        "id_ubicacion" : 3,
         "imagen" : "mamma_mia.jpg"
     }
 ]
