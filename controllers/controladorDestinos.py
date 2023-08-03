@@ -1,7 +1,11 @@
 class ControladorDestinos:
-    def __init__(self,app,DestinoCulinario):
+    def __init__(self,app,destinoCulinario):
         self.app = app
-        self.DestinoCulinario = DestinoCulinario
+        self.destinoCulinario = destinoCulinario
 
     def getDestinos(self):
-        return self.DestinoCulinario
+        return self.destinoCulinario
+    
+    def volver_inicio(self):
+        self.app.cambiar_frame(self.app.ventana_inicio)
+    
