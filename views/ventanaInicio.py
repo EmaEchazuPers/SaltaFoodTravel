@@ -28,9 +28,9 @@ class VentanaInicio(tk.Frame):
         self.boton_destinos = tk.Button(self, text='Ir a destinos',command=self.controlador.verDestinos)
         self.boton_destinos.grid(row=2,column=0,pady=10)
         
-        self.boton_busqueda = tk.Button(self, text='Buscar destinos')
+        self.boton_busqueda = tk.Button(self, text='Ver reviews',command=self.controlador.verReviews)
         self.boton_busqueda.grid(row=2,column=1,pady=10)
         
-        self.boton_actividades = tk.Button(self, text='Ver actividades')
+        self.boton_actividades = tk.Button(self, text='Ver actividades', command=self.controlador.verActividades)
         self.boton_actividades.grid(row=2,column=2,pady=10)
 
