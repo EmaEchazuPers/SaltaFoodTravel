@@ -1,17 +1,17 @@
 import json
 
 class Destino:
-    def __init__(self, id_destino, nombre):        
+    def __init__(self, id_destino, nombre, tipo_cocina, ingredientes, precio_min, precio_max, popularidad, disponibilidad, id_ubicacion,imagen):        
         self.id_destino = id_destino
         self.nombre = nombre
-        self.tipo_cocina = ''
-        self.ingredientes = []        
-        self.precio_min = 0.0
-        self.precio_max = 0.0
-        self.popularidad = 0.0
-        self.disponibilidad = False
-        self.id_ubicacion = 0
-        self.imagen = ''
+        self.tipo_cocina = tipo_cocina
+        self.ingredientes = ingredientes
+        self.precio_min = precio_min
+        self.precio_max = precio_max
+        self.popularidad = popularidad
+        self.disponibilidad = disponibilidad
+        self.id_ubicacion = id_ubicacion
+        self.imagen = imagen
 
     @classmethod
     def carga_json(cls,archivo):
