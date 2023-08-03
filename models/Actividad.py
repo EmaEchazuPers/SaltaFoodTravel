@@ -12,11 +12,3 @@ class Actividad:
         with open(archivo,'r') as f:
             data = json.load(f)
         return [cls(**actividad) for actividad in data]
-
-    """
-    def set_nombre(self,nombre):
-        self.nombre = str(nombre)
-    
-    def set_hora(self, hora_inicio):
-        self.hora_inicio = str(hora_inicio)
-    """

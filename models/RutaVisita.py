@@ -12,7 +12,4 @@ class Ruta_Visita:
             data = json.load(f)
         return [cls(**ruta) for ruta in data]
 
-    """
-    def set_destinos(self, destinos):
-        self.destinos = destinos
-    """
+ 

@@ -13,8 +13,5 @@ class Usuario:
             data = json.load(f)
         return [cls(**usuario) for usuario in data]
 
-    """
-    def set_ruta(self, historial_rutas):
-        self.historial_rutas = historial_rutas
-    """
+
     
