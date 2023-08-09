@@ -5,3 +5,4 @@ visitas a destinos culinarios de manera eﬁciente y organizada.
 La aplicación brindará información detallada sobre los lugares, eventos y actividades en diferentes destinos culinarios
 y permitirá a los usuarios buscar, ﬁltrar y planiﬁcar sus visitas de acuerdo a sus preferencias gastronómicas.
 
+Version 1.0- Para ir a nueva versión: https://github.com/EmaEchazuPers/AppSaltaTravelFood
